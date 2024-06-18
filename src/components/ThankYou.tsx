@@ -26,7 +26,6 @@ export default function ThankYou() {
         letterSpacing="widest"
         lineHeight="none"
         fontSize="3xl"
-        as="h1"
       >
         Thank you!
       </Heading>

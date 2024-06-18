@@ -59,17 +59,15 @@ export default function FormElementGroup({
   }
 
   return (
-    <FormControl
-      as="fieldset"
-      isInvalid={allInputsTouched && error !== undefined}
-    >
-      <FormLabel label={label} as="legend" />
+    <FormControl as="div" isInvalid={allInputsTouched && error !== undefined}>
+      <FormLabel htmlFor="" label={label} as="div" />
       <SimpleGrid columns={inputs.length} spacing="2">
         {inputs.map((input) => {
           return (
             <Field key={input.name} name={input.name}>
               {({ field, meta }: FieldProps) => (
                 <FormInput
+                  id=""
                   placeholder={input.placeholder}
                   {...field}
                   onChange={(e) => handleChange(e, field.onChange)}

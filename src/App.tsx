@@ -1,4 +1,4 @@
-import { SimpleGrid } from "@chakra-ui/react";
+import { SimpleGrid, Heading, VisuallyHidden } from "@chakra-ui/react";
 import Header from "@/components/Header";
 import Form from "@/components/Form";
 import ThankYou from "@components/ThankYou";
@@ -37,8 +37,12 @@ function App() {
       }}
       spacing={{ base: 20, lg: 0 }}
       minH="100vh"
+      as="main"
     >
       <Header />
+      <VisuallyHidden>
+        <Heading as="h1">Card Details Form</Heading>
+      </VisuallyHidden>
       <Formik
         initialValues={formValues}
         validationSchema={formSchema}

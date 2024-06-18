@@ -9,6 +9,7 @@ export default function FormLabel(props: FormLabelProps & { label: string }) {
       fontSize={{ base: "xs", sm: "sm" }}
       mx="0"
       {...props}
+      label={null}
     >
       {props.label}
     </ChakraFormLabel>

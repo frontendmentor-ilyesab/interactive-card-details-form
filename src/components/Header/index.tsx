@@ -6,7 +6,7 @@ import MobileDesktopImage from "@images/bg-main-desktop.png";
 
 export default function Header() {
   return (
-    <Box pos="relative">
+    <Box pos="relative" as="header">
       <Show breakpoint="(max-width: 991px)">
         <Image src={MobileHeaderImage} alt="" w="full" h="240px" />
       </Show>
